@@ -6,6 +6,8 @@ interface IAntdOpts {
 }
 
 export default (api: IApi) => {
+  api.registerPlugins([require.resolve('umi-plugin-antd-icon-config')]);
+
   api.describe({
     config: {
       schema(joi) {

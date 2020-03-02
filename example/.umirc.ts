@@ -5,10 +5,12 @@ export default defineConfig({
     {
       name: 'model 测试',
       path: '/plugin-model',
+      icon: 'home',
       component: './plugin-model',
     },
     {
       name: 'initial-state 测试',
+      icon: 'heart',
       path: '/plugin-initial-state',
       component: './plugin-initial-state',
     },
@@ -24,6 +26,7 @@ export default defineConfig({
     },
   ],
   locale: {},
+  layout: {},
   presets: [require.resolve('../packages/preset-react/lib')],
   // plugins: [require.resolve('../packages/plugin-webpack-5/lib')],
 });
